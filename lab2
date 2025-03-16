@@ -1,0 +1,9 @@
+b=1
+n=24
+a=[0]*n
+from random import randint
+for i in range(n):
+    a[i]=randint(-12,24)
+    if a[i]<0:
+        b=a[i]*b
+print(b)
